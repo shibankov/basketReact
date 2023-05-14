@@ -1,5 +1,4 @@
-import React, { Fragment, useState, useContext } from 'react';
-import {Link } from "react-router-dom";
+import React, { Fragment, useContext } from 'react';
 
 import {wiredItems, noWiredItems} from "../js/main.js";
 import {Context} from "../js/context.js";
@@ -10,7 +9,7 @@ import {Footer} from "./footer.jsx";
 
 export const Main = () => {
 
-    const {basket,setBasket,show,setShow} = useContext(Context)
+    const {basket,setBasket} = useContext(Context)
 
 
     const addBasket =  (product) =>{
@@ -55,7 +54,7 @@ export const Main = () => {
                                                         </div>
                                                     </div>
                                                     <div className="card__row">
-                                                        <div className="card__col">
+                                                        <div className="card__rating">
                                                             <div className="rating">
                                                                 <div className="rating__icon">
                                                                     <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">

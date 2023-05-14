@@ -17,8 +17,8 @@ module.exports = {
   entry: path.join(__dirname, 'src', 'index.js'),
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'js/[name].[contenthash:3].js',
-    assetModuleFilename: 'images/[name].[contenthash:3][ext]'
+    filename: 'js/[name].[contenthash:8].js',
+    assetModuleFilename: 'images/[name].[contenthash:8][ext]'
   },
   module: {
     rules: [
@@ -44,7 +44,7 @@ module.exports = {
         test: /\.(woff2?|eot|ttf|otf)$/i,
         type:'asset/resource',
         generator: {
-          filename: path.join('fonts', '[name].[contenthash:3][ext]'),
+          filename: path.join('fonts', '[name].[contenthash:8][ext]'),
         },
       },
       {
@@ -55,7 +55,7 @@ module.exports = {
         test: /\.svg$/,
         type: 'asset/resource',
         generator: {
-          filename: 'iсons/[name].[contenthash:3][ext]',
+          filename: 'iсons/[name].[contenthash:8][ext]',
         },
 
       },
@@ -86,7 +86,7 @@ module.exports = {
       },
     }),
     new MiniCssExtractPlugin({
-      filename: 'css/[name].[contenthash:3].css',
+      filename: 'css/[name].[contenthash:8].css',
     }),
     new FaviconsWebpackPlugin({
       logo: './src/static/favicon.ico',

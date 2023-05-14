@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react';
-import { Routes, Route } from 'react-router-dom';
 import { Wrapper } from "./wrapper.jsx";
 
 
