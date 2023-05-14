@@ -1,5 +1,5 @@
 node_modules
-dist
+#dist
 .idea
 vendor
 npm-debug.log
@@ -24,7 +24,7 @@ yarn-error.log
 
 # Maven
 target/
-dist/
+#dist/
 
 # JetBrains IDE
 .idea/
