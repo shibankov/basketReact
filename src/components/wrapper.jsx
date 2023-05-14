@@ -11,12 +11,12 @@ export const Wrapper = () => {
     const [show, setShow] = useState(false)
 
     useEffect(()=>{
-        if(localStorage.getItem('basket') !== null){
-            setBasket(JSON.parse(localStorage.getItem('basket')))
+        if(sessionStorage.getItem('basket') !== null){
+            setBasket(JSON.parse(sessionStorage.getItem('basket')))
         }
     },[])
     useEffect(()=>{
-        localStorage.setItem('basket' , JSON.stringify(basket))
+        sessionStorage.setItem('basket' , JSON.stringify(basket))
     },[basket])
 
     return(

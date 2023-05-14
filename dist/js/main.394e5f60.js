@@ -7346,12 +7346,12 @@ var Wrapper = function Wrapper() {
     show = _useState4[0],
     setShow = _useState4[1];
   (0,react.useEffect)(function () {
-    if (localStorage.getItem('basket') !== null) {
-      setBasket(JSON.parse(localStorage.getItem('basket')));
+    if (sessionStorage.getItem('basket') !== null) {
+      setBasket(JSON.parse(sessionStorage.getItem('basket')));
     }
   }, []);
   (0,react.useEffect)(function () {
-    localStorage.setItem('basket', JSON.stringify(basket));
+    sessionStorage.setItem('basket', JSON.stringify(basket));
   }, [basket]);
   return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement(Context.Provider, {
     value: {
